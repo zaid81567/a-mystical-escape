@@ -1,0 +1,6 @@
+/* @import url(style/basic.css);
+@import url(style/mobile-res.css);
+@import url(style/tablet-res.css); */
+
+@import url(style/mobile-first.css);
+@import url(style/insta-icon.css);

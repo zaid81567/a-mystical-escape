@@ -1,0 +1,160 @@
+/* font imports */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins";
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+
+  background-color: #f0f0f0;
+}
+
+/* utilities */
+.padding {
+  padding: 10px 3vw;
+}
+
+/* header */
+header {
+  /* border: 2px rgb(255, 16, 16) solid; */
+  /* border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+  box-shadow: 0px 0px 21px 2px rgba(86, 86, 86, 0.1);
+}
+
+.book-title {
+  padding-top: 50px;
+  font-size: 60px;
+  line-height: 3.8rem;
+  margin: 0;
+}
+
+.poetress {
+  font-size: initial;
+  text-align: right;
+
+  text-decoration: wavy underline rgb(190, 168, 248) 2px;
+  text-underline-offset: 5px;
+}
+
+/* writer-intro-section */
+.writer-intro-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  text-align: center;
+  font-style: italic;
+}
+
+.insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  /* border: rgb(232, 179, 255) 3px solid; */
+
+  padding: 0 10px;
+  border-radius: 20px;
+
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.insta a {
+  text-decoration: none;
+  color: black;
+}
+
+/* collections */
+.collections {
+  margin-top: 20px;
+  box-shadow: 0px 0px 21px 2px rgba(86, 86, 86, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding-bottom: 60px;
+  cursor: pointer;
+}
+
+.collections h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  padding: 40px 0;
+  display: inline-block;
+}
+
+.collection-container {
+  background-color: blanchedalmond;
+  padding: 0 10px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.collection-container p {
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 20px;
+
+  background-color: rgba(193, 168, 255, 0.2);
+}
+
+.collection-1 {
+  background-image: linear-gradient(
+      to right,
+      rgb(14, 15, 14),
+      rgba(14, 15, 14, 0.601),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/assets/images/greek_methology.png);
+  background-position: right;
+  background-size: cover;
+}
+
+.collection-2 {
+  background-image: linear-gradient(
+      to right,
+      rgb(14, 15, 14),
+      rgba(14, 15, 14, 0.601),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/assets/images/seducers.png);
+  background-position: right;
+  background-size: cover;
+}
+
+.collection-3 {
+  background-image: linear-gradient(
+      to right,
+      rgb(14, 15, 14),
+      rgba(14, 15, 14, 0.601),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/assets/images/jnk_harmony_.jpeg);
+  background-position: right;
+  background-size: cover;
+}
+
+.collection-4 {
+  background-image: linear-gradient(
+      to right,
+      rgb(14, 15, 14),
+      rgba(14, 15, 14, 0.601),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/assets/images/soulful_stanzas_.png);
+  background-position: right;
+  background-size: cover;
+}
