@@ -4,6 +4,7 @@
 
 /* css */
 @import url("./basics.css");
+@import url("./noSelect.css");
 
 /* poem-collection-title */
 .poem-collection-title {

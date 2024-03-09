@@ -1,5 +1,6 @@
 /* css */
-@import url('./basics.css');
+@import url("./basics.css");
+@import url("./noSelect.css");
 
 /* header */
 header {
