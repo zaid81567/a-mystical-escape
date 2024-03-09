@@ -49,6 +49,7 @@ header {
 
   font-size: 16px;
   cursor: pointer;
+  border: 2px rgba(230, 185, 252, 0.232) solid;
 }
 
 .insta a {

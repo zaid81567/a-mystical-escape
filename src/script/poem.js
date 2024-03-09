@@ -11,11 +11,13 @@ if (collection_name && poem_title) {
   collection_name = localStorage.getItem("collection-name");
   poem_title = localStorage.getItem("poem-title");
 }
-console.log("poem-title:", poem_title);
+// console.log("poem-title:", poem_title);
 
 //ELEMENTS
 const title_el = document.getElementById("poem-title");
 const poem_el = document.getElementById("poem");
+// const greek_god_name_el = document.getElementById("greek-god-name");
+const title_container = document.getElementById("title-container");
 
 //FUNCTIONS
 
@@ -35,12 +37,18 @@ async function fetchPoem(collection_name, poem_title) {
 function getPoem(title, poems) {
   console.log(poems.length);
   for (let i = 0; i < poems.length; i++) {
-    if (poems[i].title == title) {
+    if (poems[i].title.toLowerCase() == title.toLowerCase()) {
+      //set greek god name if valid
+      if (collection_name.toLowerCase() == "greek-mythology") {
+        const greek_god_el = document.createElement("p");
+        greek_god_el.classList.add("greek-god-name");
+        greek_god_el.innerText = poems[i].god;
+
+        title_container.append(greek_god_el);
+      }
       return poems[i].content;
     }
   }
-
-  
 }
 
 function showPoem(poem) {
