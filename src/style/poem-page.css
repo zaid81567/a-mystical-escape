@@ -1,0 +1,35 @@
+@import url(./basics.css);
+
+
+.container{
+    /* border: 2px  red solid; */
+    margin: 30px 0;
+}
+
+.title{
+    border-radius: 10px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    margin: 30px 0;
+}
+
+.title h1{
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.poem{
+    border-radius: 10px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(123, 0, 134, 0.107) -3px -3px 6px 1px inset;
+}
+
+.poem p{
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 15px;
+}
+
+.poet{
+    text-align: right;
+}

@@ -60,7 +60,7 @@ function getPoemListEl(title) {
         setTimeout(() => {
           //sending collection name with url string
           window.location.href =
-            "../src/pages/poem-list.html?collection=" + collection+"&poem-title"+title;
+            "../pages/poem.html?collection-name=" + collection_name+"&poem-title="+title;
         }, 200);
       }
   });

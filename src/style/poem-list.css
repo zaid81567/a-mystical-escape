@@ -27,6 +27,7 @@
   /* border: 2px red solid; */
   padding-top: 10px;
   padding-bottom: 40px;
+  cursor: pointer;
 }
 
 .poem-list-title {
