@@ -12,6 +12,30 @@ header {
   font-size: 60px;
   line-height: 3.8rem;
   margin: 0;
+
+  display: inline-block;
+}
+
+/* typewritter effect on "mystical" */
+.type-writer {
+  border-right: 5px rgb(0, 0, 0) solid;
+  white-space: nowrap;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  animation: typing 1.5s steps(8), cursor 1s infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
 }
 
 .poetress {
@@ -20,6 +44,7 @@ header {
 
   text-decoration: wavy underline rgb(190, 168, 248) 2px;
   text-underline-offset: 5px;
+  margin-top: 40px;
 }
 
 /* writer-intro-section */
@@ -41,9 +66,7 @@ header {
   align-items: center;
   gap: 0.5rem;
 
-  /* border: rgb(232, 179, 255) 3px solid; */
-
-  padding: 0 10px;
+  padding: 5px 10px;
   border-radius: 20px;
 
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
@@ -51,6 +74,10 @@ header {
   font-size: 16px;
   cursor: pointer;
   border: 2px rgba(230, 185, 252, 0.232) solid;
+}
+
+.insta:active{
+  background-color: rgba(230, 185, 252, 0.232);
 }
 
 .insta a {
@@ -85,7 +112,19 @@ header {
   color: white;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
+.collection-container:active {
+  animation-name: scaleAnimation;
+  animation-duration: 0.3s; /* Adjust the duration as needed */
+}
 
+@keyframes scaleAnimation {
+  from {
+    background-size: 100%; /* Start size */
+  }
+  to {
+    background-size: 105%; /* End size */
+  }
+}
 .collection-container p {
   display: inline-block;
   padding: 0 10px;

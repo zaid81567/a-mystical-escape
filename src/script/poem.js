@@ -16,8 +16,8 @@ if (collection_name && poem_title) {
 //ELEMENTS
 const title_el = document.getElementById("poem-title");
 const poem_el = document.getElementById("poem");
-// const greek_god_name_el = document.getElementById("greek-god-name");
 const title_container = document.getElementById("title-container");
+const poet_name_el = document.getElementById("poet");
 
 //FUNCTIONS
 
@@ -54,6 +54,7 @@ function getPoem(title, poems) {
 function showPoem(poem) {
   title_el.innerText = poem_title;
   poem_el.innerText = poem;
+  poet_name_el.innerText = "~Samiha";
 }
 
 //fetch poem from json

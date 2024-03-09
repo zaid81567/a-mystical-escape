@@ -31,6 +31,7 @@
   cursor: pointer;
 }
 
+
 .poem-list-title {
   /* border: 2px plum solid; */
   font-size: 16px;
@@ -45,6 +46,11 @@
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
+
+.poem-list-title:active{
+  background-color: rgba(204, 219, 232, 0.637);
+}
+
 
 .poem-list-title p {
   margin: 0;
