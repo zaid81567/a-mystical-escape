@@ -1,7 +1,17 @@
 const urlParam = new URLSearchParams(window.location.search);
-const collection_name = urlParam.get("collection-name");
-const poem_title = urlParam.get("poem-title");
+let collection_name = urlParam.get("collection-name");
+let poem_title = urlParam.get("poem-title");
 // console.log(collection_name, poem_title);
+
+//handling back button url refreshing and removing parameters by storing the params inside localStorage
+if (collection_name && poem_title) {
+  localStorage.setItem("collection-name", collection_name);
+  localStorage.setItem("poem-title", poem_title);
+} else {
+  collection_name = localStorage.getItem("collection-name");
+  poem_title = localStorage.getItem("poem-title");
+}
+console.log("poem-title:", poem_title);
 
 //ELEMENTS
 const title_el = document.getElementById("poem-title");

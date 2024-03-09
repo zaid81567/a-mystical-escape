@@ -1,6 +1,14 @@
 //after redirect getting name of the collection using URLSearchParams.get()
 let collection_name = new URLSearchParams(window.location.search).get("value");
 
+//handling back button url refreshing and removing parameters by storing the params inside localStorage
+if (collection_name) {
+  localStorage.setItem("collection-name", collection_name);
+} else {
+  collection_name = localStorage.getItem("collection-name");
+}
+console.log("2ndpg cName", collection_name);
+
 const collection_title = document.getElementById("collection-title");
 const poem_list_el = document.getElementById("poem-list");
 
@@ -56,13 +64,16 @@ function getPoemListEl(title) {
   poem_list_div.addEventListener("click", function (event) {
     // console.log("clicked", event.target.getAttribute("data-catagory"));
     let title = event.target.getAttribute("data-title");
-      if (title != null) {
-        setTimeout(() => {
-          //sending collection name with url string
-          window.location.href =
-            "../pages/poem.html?collection-name=" + collection_name+"&poem-title="+title;
-        }, 200);
-      }
+    if (title != null) {
+      setTimeout(() => {
+        //sending collection name with url string
+        window.location.href =
+          "../pages/poem.html?collection-name=" +
+          collection_name +
+          "&poem-title=" +
+          title;
+      }, 200);
+    }
   });
 
   return poem_list_div;
