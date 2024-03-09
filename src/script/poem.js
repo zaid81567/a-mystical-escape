@@ -33,11 +33,14 @@ async function fetchPoem(collection_name, poem_title) {
 }
 
 function getPoem(title, poems) {
+  console.log(poems.length);
   for (let i = 0; i < poems.length; i++) {
     if (poems[i].title == title) {
       return poems[i].content;
     }
   }
+
+  
 }
 
 function showPoem(poem) {
