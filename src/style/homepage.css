@@ -110,11 +110,12 @@ header {
   padding: 0 10px;
   border-radius: 10px;
   color: white;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px 10px rgba(7, 0, 8, 0.115),inset 3px 4px 6px 2px rgba(22, 20, 22, 0.403), inset -3px -4px 6px 2px rgba(10, 0, 10, 0.403); */
+  
 }
 .collection-container:active {
   animation-name: scaleAnimation;
-  animation-duration: 0.3s; /* Adjust the duration as needed */
+  animation-duration: 1s; 
 }
 
 @keyframes scaleAnimation {
@@ -134,9 +135,9 @@ header {
 }
 
 .collection-1 {
-  background-image: linear-gradient(
+    background-image: linear-gradient(
       to right,
-      rgb(14, 15, 14),
+      rgba(64, 101, 54, 0.818),
       rgba(14, 15, 14, 0.601),
       rgba(0, 0, 0, 0)
     ),
@@ -146,9 +147,9 @@ header {
 }
 
 .collection-2 {
-  background-image: linear-gradient(
+    background-image: linear-gradient(
       to right,
-      rgb(14, 15, 14),
+      rgba(89, 74, 55, 0.929),
       rgba(14, 15, 14, 0.601),
       rgba(0, 0, 0, 0)
     ),
@@ -158,10 +159,10 @@ header {
 }
 
 .collection-3 {
-  background-image: linear-gradient(
+    background-image: linear-gradient(
       to right,
-      rgb(14, 15, 14),
-      rgba(14, 15, 14, 0.601),
+      rgba(77, 2, 63, 0.671),
+      rgba(25, 36, 75, 0.368),
       rgba(0, 0, 0, 0)
     ),
     url(/assets/images/jnk_harmony_.jpeg);
@@ -170,9 +171,9 @@ header {
 }
 
 .collection-4 {
-  background-image: linear-gradient(
+    background-image: linear-gradient(
       to right,
-      rgb(14, 15, 14),
+      rgb(29, 104, 105),
       rgba(14, 15, 14, 0.601),
       rgba(0, 0, 0, 0)
     ),
