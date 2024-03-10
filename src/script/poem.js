@@ -37,7 +37,6 @@ async function fetchPoem(collection_name, poem_title) {
 }
 
 function getPoem(title, poems) {
-  console.log(poems.length);
   for (let i = 0; i < poems.length; i++) {
     if (poems[i].title.toLowerCase() == title.toLowerCase()) {
       //set greek god name if valid
@@ -60,11 +59,35 @@ function showPoem(poem) {
   poet_name_el.innerText = "~Samiha";
 }
 
+function addPlayBtn() {
+  play_btn_el.classList.replace("cancel-btn", "play-btn");
+}
+
+function addCancelBtn() {
+  play_btn_el.classList.replace("play-btn", "cancel-btn");
+}
 //EVENT LISTENER
+// speech using built-in audio feature
 play_btn_el.addEventListener("click", () => {
-  let whole_poem = poem_title + "\n" + poem;
-  let utterance = new SpeechSynthesisUtterance(whole_poem);
+  console.log("clicked");
+
+  //when pressed again just cancel the whole queue of utterance
+  if (speechSynthesis.speaking) {
+    addPlayBtn();
+    return speechSynthesis.cancel();
+  }
+
+  //preparing for synthesis
+  const whole_poem = poem_title + "\n" + poem;
+  const utterance = new SpeechSynthesisUtterance(whole_poem);
+
+  utterance.addEventListener("end", () => {
+    console.log("ended!");
+    speechSynthesis.cancel();
+  });
+
   speechSynthesis.speak(utterance);
+  addCancelBtn();
 });
 
 //fetch poem from json
