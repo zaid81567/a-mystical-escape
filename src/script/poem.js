@@ -1,6 +1,7 @@
 const urlParam = new URLSearchParams(window.location.search);
 let collection_name = urlParam.get("collection-name");
 let poem_title = urlParam.get("poem-title");
+let poem = null;
 // console.log(collection_name, poem_title);
 
 //handling back button url refreshing and removing parameters by storing the params inside localStorage
@@ -18,6 +19,7 @@ const title_el = document.getElementById("poem-title");
 const poem_el = document.getElementById("poem");
 const title_container = document.getElementById("title-container");
 const poet_name_el = document.getElementById("poet");
+const play_btn_el = document.getElementById("btn");
 
 //FUNCTIONS
 
@@ -46,7 +48,8 @@ function getPoem(title, poems) {
 
         title_container.append(greek_god_el);
       }
-      return poems[i].content;
+      poem = poems[i].content;
+      return poem;
     }
   }
 }
@@ -56,6 +59,13 @@ function showPoem(poem) {
   poem_el.innerText = poem;
   poet_name_el.innerText = "~Samiha";
 }
+
+//EVENT LISTENER
+play_btn_el.addEventListener("click", () => {
+  let whole_poem = poem_title + "\n" + poem;
+  let utterance = new SpeechSynthesisUtterance(whole_poem);
+  speechSynthesis.speak(utterance);
+});
 
 //fetch poem from json
 fetchPoem(collection_name, poem_title);
