@@ -82,7 +82,8 @@ play_btn_el.addEventListener("click", () => {
   const utterance = new SpeechSynthesisUtterance(whole_poem);
 
   utterance.addEventListener("end", () => {
-    console.log("ended!");
+    // console.log("ended!");
+    addPlayBtn();
     speechSynthesis.cancel();
   });
 
