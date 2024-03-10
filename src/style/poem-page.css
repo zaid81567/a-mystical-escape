@@ -28,7 +28,7 @@
 .poem{
     border-radius: 10px;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(123, 0, 134, 0.107) -3px -3px 6px 1px inset;
+     rgb(204, 219, 232)  -3px -3px 6px 1px inset;
 }
 
 .poem p{
@@ -37,6 +37,6 @@
     font-size: 15px;
 }
 
-.poet{
+p.poet{
     text-align: right;
 }
