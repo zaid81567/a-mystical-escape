@@ -2,6 +2,7 @@ const urlParam = new URLSearchParams(window.location.search);
 let collection_name = urlParam.get("collection-name");
 let poem_title = urlParam.get("poem-title");
 let poem = null;
+let greek_god_name = null;
 // console.log(collection_name, poem_title);
 
 //handling back button url refreshing and removing parameters by storing the params inside localStorage
@@ -45,9 +46,12 @@ function getPoem(title, poems) {
         greek_god_el.classList.add("greek-god-name");
         greek_god_el.innerText = poems[i].god;
 
+        greek_god_name = poems[i].god;
+
         title_container.append(greek_god_el);
       }
       poem = poems[i].content;
+
       return poem;
     }
   }
@@ -78,7 +82,9 @@ play_btn_el.addEventListener("click", () => {
   }
 
   //preparing for synthesis
-  const whole_poem = poem_title + "\n" + poem;
+  let whole_poem = greek_god_name
+    ? poem_title + "\n" + greek_god_name + "\n" + poem
+    : poem_title + "\n" + poem;
   const utterance = new SpeechSynthesisUtterance(whole_poem);
 
   utterance.addEventListener("end", () => {
