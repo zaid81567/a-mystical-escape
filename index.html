@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="src/style/homepage.css" />
     <link rel="stylesheet" href="src/style/insta-icon.css" />
     <script type="module" src="src/script/script.js" defer></script>
+    <script src="src/script/random.js" defer></script>
     <title>A Mystical Escape</title>
   </head>
   <body>
@@ -33,7 +34,7 @@
     <section class="collections padding" id="collections">
       <h2>COLLECTIONS!</h2>
       <div
-        class="collection-1 collection-container"
+        class="collection-1 collection-container cursor-pointer"
         data-catagory="greek-mythology"
       >
         <h3 class="collection-name" data-catagory="greek-mythology">
@@ -41,19 +42,19 @@
         </h3>
         <p class="num-of-poems" data-catagory="greek-mythology">10 poems</p>
       </div>
-      <div class="collection-2 collection-container" data-catagory="seducers">
+      <div class="collection-2 collection-container cursor-pointer" data-catagory="seducers">
         <h3 class="collection-name" data-catagory="seducers">Seducers</h3>
         <p class="num-of-poems" data-catagory="seducers">9 poems</p>
       </div>
       <div
-        class="collection-3 collection-container"
+        class="collection-3 collection-container cursor-pointer"
         data-catagory="ink-harmony"
       >
         <h3 class="collection-name" data-catagory="ink-harmony">Ink Harmony</h3>
         <p class="num-of-poems" data-catagory="ink-harmony">31 poems</p>
       </div>
       <div
-        class="collection-4 collection-container"
+        class="collection-4 collection-container cursor-pointer"
         data-catagory="soulful-stanzas"
       >
         <h3 class="collection-name" data-catagory="soulful-stanzas">
@@ -61,6 +62,7 @@
         </h3>
         <p class="num-of-poems" data-catagory="soulful-stanzas">60 poems</p>
       </div>
+      <div class="random-container cursor-pointer" id="random"><span class="random-icon"></span></div>
     </section>
   </body>
 </html>

@@ -1,6 +1,7 @@
 /* css */
 @import url("./basics.css");
 @import url("./noSelect.css");
+@import url("./random-icon.css");
 
 /* header */
 header {
@@ -94,6 +95,9 @@ header {
   gap: 1rem;
 
   padding-bottom: 60px;
+}
+
+.cursor-pointer{
   cursor: pointer;
 }
 
@@ -180,4 +184,19 @@ header {
     url(/assets/images/soulful_stanzas_.png);
   background-position: right;
   background-size: cover;
+}
+
+
+.random-container{
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(223, 223, 223, 0.303) -3px -3px 6px 1px inset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  font-size: 40px;
+  /* padding: 20px; */
 }
