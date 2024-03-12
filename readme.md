@@ -8,6 +8,8 @@
 
 - Poem Display: The web app displays a collection of poems authored by Samiha Q. Rahman.
 - Poem Categories: Poems are categorized based on themes or genres, allowing users to explore specific types of poetry.
+- Play Poem: Instead of reading user can choose to listen to her poem, feature implemented using google's speech synthesis.
+- Get Random Poems: Users can get one of her random poem by simply clicking on bottom homepage random button.
 
 ## Technologies Used
 
