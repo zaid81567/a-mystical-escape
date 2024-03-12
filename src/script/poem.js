@@ -74,10 +74,12 @@ function addCancelBtn() {
 // speech using built-in audio feature
 play_btn_el.addEventListener("click", () => {
   console.log("clicked");
+  play_btn_el.classList.add("blip");
 
   //when pressed again just cancel the whole queue of utterance
   if (speechSynthesis.speaking) {
     addPlayBtn();
+    play_btn_el.classList.remove("blip");
     return speechSynthesis.cancel();
   }
 
@@ -91,6 +93,7 @@ play_btn_el.addEventListener("click", () => {
     // console.log("ended!");
     addPlayBtn();
     speechSynthesis.cancel();
+    play_btn_el.classList.remove("blip");
   });
 
   speechSynthesis.speak(utterance);
@@ -98,6 +101,7 @@ play_btn_el.addEventListener("click", () => {
     console.log(
       `We have started uttering this speech: ${event.utterance.text}`
     );
+    play_btn_el.classList.remove("blip");
     addCancelBtn();
   });
 });

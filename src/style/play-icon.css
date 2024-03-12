@@ -11,3 +11,16 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
+.blip{
+  animation: blip 400ms infinite alternate ease-in-out ;
+}
+
+@keyframes blip {
+  from{
+    opacity: 100%;
+  }
+  to{
+    opacity: 30%;
+  }
+}
