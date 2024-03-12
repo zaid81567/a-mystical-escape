@@ -94,7 +94,12 @@ play_btn_el.addEventListener("click", () => {
   });
 
   speechSynthesis.speak(utterance);
-  addCancelBtn();
+  utterance.addEventListener("start", (event) => {
+    console.log(
+      `We have started uttering this speech: ${event.utterance.text}`
+    );
+    addCancelBtn();
+  });
 });
 
 //fetch poem from json
