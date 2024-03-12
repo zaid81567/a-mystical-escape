@@ -5,7 +5,7 @@
 
 /* header */
 header {
-  box-shadow: 0px 0px 21px 2px rgba(86, 86, 86, 0.1);
+  box-shadow: 0px 0px 21px 2px rgba(204, 219, 232,.6);
 }
 
 .book-title {
@@ -54,6 +54,13 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+   /* margin-top: 10px; */
+  /* border-radius: 10px; */
+  /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(223, 223, 223, 0.303) -3px -3px 6px 1px inset; */
+
+
 }
 
 .intro {
@@ -89,7 +96,7 @@ header {
 /* collections */
 .collections {
   margin-top: 20px;
-  box-shadow: 0px 0px 21px 2px rgba(86, 86, 86, 0.1);
+  box-shadow: 0px 0px 21px 2px rgba(204, 219, 232,.6);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -199,4 +206,8 @@ header {
   padding: 30px 0;
   font-size: 40px;
   /* padding: 20px; */
+}
+
+.random-container:active .random-icon{
+  transform: scale(1.2);
 }
