@@ -19,7 +19,7 @@ async function fetchPoemList() {
 }
 
 function getRandPoem(data) {
-  console.log("getting random poem data");
+  // console.log("getting random poem data");
   let randCollectionIndex = Math.floor(Math.random() * data.chapters.length);
   let randCollectionName = data.chapters[randCollectionIndex];
   let randPoemIndex = Math.floor(
@@ -30,7 +30,7 @@ function getRandPoem(data) {
   let collection_name = randCollectionName.title;
   let title = randPoemName.title;
 
-  console.log(randCollectionName, randPoemName);
+  // console.log(randCollectionName, randPoemName);
 
   setTimeout(() => {
     //sending collection name with url string

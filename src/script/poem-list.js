@@ -7,7 +7,7 @@ if (collection_name) {
 } else {
   collection_name = localStorage.getItem("collection-name");
 }
-console.log("2ndpg cName", collection_name);
+// console.log("2ndpg cName", collection_name);
 
 const collection_title = document.getElementById("collection-title");
 const poem_list_el = document.getElementById("poem-list");
@@ -17,7 +17,7 @@ collection_title.innerText = collection_name.toUpperCase().replace("-", " ");
 
 //POEM_LIST====================================================
 async function fetchPoemList(collection) {
-  console.log("inside ShowList:", collection);
+  // console.log("inside ShowList:", collection);
   try {
     const response = await fetch("../../assets/json/poemList.json");
     // const response = await fetch("example.json");

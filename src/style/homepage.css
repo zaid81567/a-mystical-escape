@@ -55,14 +55,7 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 30px;
-
-   /* margin-top: 10px; */
-  /* border-radius: 10px; */
-  /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(223, 223, 223, 0.303) -3px -3px 6px 1px inset; */
-
-
+  padding-bottom: 50px;
 }
 
 .intro {
@@ -97,7 +90,7 @@ header {
 
 /* collections */
 .collections {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   box-shadow: 0px 0px 21px 2px rgba(204, 219, 232,.6);
   display: flex;
   flex-direction: column;
@@ -123,8 +116,6 @@ header {
   padding: 0 10px;
   border-radius: 10px;
   color: white;
-  /* box-shadow: 0 0 10px 10px rgba(7, 0, 8, 0.115),inset 3px 4px 6px 2px rgba(22, 20, 22, 0.403), inset -3px -4px 6px 2px rgba(10, 0, 10, 0.403); */
-  
 }
 .collection-container:active {
   animation-name: scaleAnimation;
@@ -133,10 +124,10 @@ header {
 
 @keyframes scaleAnimation {
   from {
-    background-size: 100%; /* Start size */
+    background-size: 100%;
   }
   to {
-    background-size: 105%; /* End size */
+    background-size: 105%;
   }
 }
 .collection-container p {

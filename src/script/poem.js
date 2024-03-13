@@ -73,7 +73,7 @@ function addCancelBtn() {
 //EVENT LISTENER
 // speech using built-in audio feature
 play_btn_el.addEventListener("click", () => {
-  console.log("clicked");
+  // console.log("clicked");
   play_btn_el.classList.add("blip");
 
   //when pressed again just cancel the whole queue of utterance
