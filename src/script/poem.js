@@ -98,9 +98,9 @@ play_btn_el.addEventListener("click", () => {
 
   speechSynthesis.speak(utterance);
   utterance.addEventListener("start", (event) => {
-    console.log(
-      `We have started uttering this speech: ${event.utterance.text}`
-    );
+    // console.log(
+    //   `We have started uttering this speech: ${event.utterance.text}`
+    // );
     play_btn_el.classList.remove("blip");
     addCancelBtn();
   });

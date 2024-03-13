@@ -54,6 +54,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
    /* margin-top: 10px; */
   /* border-radius: 10px; */
@@ -148,20 +150,21 @@ header {
 .collection-1 {
     background-image: linear-gradient(
       to right,
-      rgba(64, 101, 54, 0.818),
-      rgba(14, 15, 14, 0.601),
+      rgba(255, 93, 6, 0.726),
+      rgba(248, 155, 26, 0.648),
+      rgba(14, 15, 14, 0.201),
       rgba(0, 0, 0, 0)
     ),
-    url(/assets/images/greek_methology.png);
-  background-position: right;
-  background-size: cover;
+    url(/assets/images/greek-mythology3.png);
+  background-position: top;
+  background-size: 110%;
 }
 
 .collection-2 {
     background-image: linear-gradient(
       to right,
-      rgba(89, 74, 55, 0.929),
-      rgba(14, 15, 14, 0.601),
+      rgba(126, 8, 144, 0.701),
+      rgba(14, 15, 14, 0.201),
       rgba(0, 0, 0, 0)
     ),
     url(/assets/images/seducers.png);
@@ -172,7 +175,7 @@ header {
 .collection-3 {
     background-image: linear-gradient(
       to right,
-      rgba(77, 2, 63, 0.671),
+      rgba(77, 2, 63, 0.871),
       rgba(25, 36, 75, 0.368),
       rgba(0, 0, 0, 0)
     ),
@@ -185,7 +188,7 @@ header {
     background-image: linear-gradient(
       to right,
       rgb(29, 104, 105),
-      rgba(14, 15, 14, 0.601),
+      rgba(14, 15, 14, 0.201),
       rgba(0, 0, 0, 0)
     ),
     url(/assets/images/soulful_stanzas_.png);
