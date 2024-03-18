@@ -2,14 +2,21 @@
 @import url("./basics.css");
 @import url("./noSelect.css");
 @import url("./random-icon.css");
+@import url("cat.css");
+
+:root {
+  --cat-clr: #2d2623;
+}
 
 /* header */
 header {
-  box-shadow: 0px 0px 21px 2px rgba(204, 219, 232,.6);
+  box-shadow: 0px 0px 21px 2px rgba(204, 219, 232, 0.6);
+  position: relative;
 }
 
 .book-title {
   padding-top: 50px;
+  padding-bottom: 50px;
   font-size: 60px;
   line-height: 3.8rem;
   margin: 0;
@@ -39,14 +46,18 @@ header {
   }
 }
 
-.poetress {
+.poet {
   font-size: initial;
   text-align: right;
+  /* display: inline-block; */
 
   text-decoration: wavy underline rgb(190, 168, 248) 2px;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
   margin-top: 40px;
+  padding-bottom: 40px;
 }
+
+
 
 /* writer-intro-section */
 .writer-intro-section {
@@ -79,7 +90,7 @@ header {
   border: 2px rgba(230, 185, 252, 0.232) solid;
 }
 
-.insta:active{
+.insta:active {
   background-color: rgba(230, 185, 252, 0.232);
 }
 
@@ -91,7 +102,7 @@ header {
 /* collections */
 .collections {
   /* margin-top: 20px; */
-  box-shadow: 0px 0px 21px 2px rgba(204, 219, 232,.6);
+  box-shadow: 0px 0px 21px 2px rgba(204, 219, 232, 0.6);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -99,7 +110,7 @@ header {
   padding-bottom: 60px;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 
@@ -119,7 +130,7 @@ header {
 }
 .collection-container:active {
   animation-name: scaleAnimation;
-  animation-duration: 1s; 
+  animation-duration: 1s;
 }
 
 @keyframes scaleAnimation {
@@ -139,7 +150,7 @@ header {
 }
 
 .collection-1 {
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       to right,
       rgba(255, 93, 6, 0.726),
       rgba(248, 155, 26, 0.648),
@@ -152,7 +163,7 @@ header {
 }
 
 .collection-2 {
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       to right,
       rgba(126, 8, 144, 0.701),
       rgba(14, 15, 14, 0.201),
@@ -164,7 +175,7 @@ header {
 }
 
 .collection-3 {
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       to right,
       rgba(77, 2, 63, 0.871),
       rgba(25, 36, 75, 0.368),
@@ -176,7 +187,7 @@ header {
 }
 
 .collection-4 {
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       to right,
       rgb(29, 104, 105),
       rgba(14, 15, 14, 0.201),
@@ -187,8 +198,7 @@ header {
   background-size: cover;
 }
 
-
-.random-container{
+.random-container {
   margin-top: 10px;
   border-radius: 10px;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
@@ -202,6 +212,6 @@ header {
   /* padding: 20px; */
 }
 
-.random-container:active .random-icon{
+.random-container:active .random-icon {
   transform: scale(1.2);
 }
