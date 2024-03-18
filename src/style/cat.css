@@ -1,6 +1,5 @@
 :root {
   --cat-color: black;
-  --cat-red: red;
 }
 /* CAT */
 .cat {
@@ -61,4 +60,8 @@
   border-left: 33px solid transparent;
   bottom: —40px;
   left: 17.5px;
+}
+
+.cat:active {
+  transform: scale(0.98);
 }
