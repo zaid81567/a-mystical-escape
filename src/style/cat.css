@@ -1,7 +1,9 @@
-
+:root {
+  --cat-clr: black;
+}
 /* CAT */
 .cat {
-  background-color: #2d2623;
+  background-color: var(--cat-clr);
   height: 115px;
   width: 50px;
   position: absolute;
@@ -13,7 +15,7 @@
 .cat:before {
   content: "";
   position: absolute;
-  background-color: #2d2623;
+  background-color: var(--cat-clr);
   height: 70px;
   width: 50px;
   border-radius: 0 80px 80px 0;
@@ -21,12 +23,11 @@
   left: 35px;
 }
 
-
 /* tail */
 .cat:after {
   content: "";
   position: absolute;
-  background-color: #2d2623;
+  background-color: var(--cat-clr);
   height: 50px;
   width: 10px;
   border-radius: 5px;
@@ -50,13 +51,13 @@
   border-right: 33px solid transparent;
 }
 
-.ear:before{
-content: "";
-position: absolute;
-height: 0;
-width: 0 ;
-border-bottom: 40px solid #2d2623;
-border-left: 33px solid transparent;
-bottom: —40px;
-left: 17.5px;
+.ear:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-bottom: 40px solid var(--cat-clr);
+  border-left: 33px solid transparent;
+  bottom: —40px;
+  left: 17.5px;
 }
